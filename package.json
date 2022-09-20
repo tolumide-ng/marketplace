@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "lint": "eslint --init",
-        "start": "npm run build && node server.js",
+        "start": "node server.js",
         "dev": "webpack serve",
         "build": "rm -rf ./dist && webpack --mode=production",
         "test": "jest",
@@ -22,6 +22,7 @@
         "dotenv-webpack": "7.1.0",
         "express": "^4.17.1",
         "file-loader": "^6.2.0",
+        "http-proxy-middleware": "^2.0.6",
         "jsonwebtoken": "^8.5.1",
         "node-sass": "7.0.1",
         "react": "^18.0.0",
@@ -33,7 +34,8 @@
         "redux-thunk": "^2.4.1",
         "sass-loader": "12.6.0",
         "style-loader": "^3.3.1",
-        "terser-webpack-plugin": "^5.1.1"
+        "terser-webpack-plugin": "^5.1.1",
+        "ts-loader": "^9.1.2"
     },
     "devDependencies": {
         "@redux-devtools/extension": "^3.2.2",
@@ -63,10 +65,10 @@
         "prettier": "^2.6.1",
         "prettier-eslint": "^13.0.0",
         "pretty-quick": "^2.0.1",
+        "react-test-renderer": "^18.2.0",
         "redux-devtools-extension": "^2.13.8",
         "source-map-loader": "^1.0.1",
         "ts-jest": "^26.5.6",
-        "ts-loader": "^9.1.2",
         "tslint-config-prettier": "^1.18.0",
         "typescript": "^4.6.3",
         "webpack": "^5.70.0",

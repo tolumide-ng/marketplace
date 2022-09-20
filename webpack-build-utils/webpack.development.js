@@ -13,6 +13,13 @@ module.exports = {
             disableRoot: true,
         },
         port: 8000,
+        proxy: {
+            "/blocks": {
+                target: process.env.BASE_URL,
+                secure: false,
+                changeOrigin: true,
+            },
+        },
     },
     output: {
         filename: "[name].bundle.js",

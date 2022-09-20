@@ -1,0 +1,30 @@
+.product {
+    padding: var(--app-padding);
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.productTop {
+    margin-bottom: 0.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productName {
+    width: 80%;
+    margin-right: 1rem;
+    font-size: 0.85rem;
+}
+
+.productRemove {
+    border: 1px solid var(--color-black);
+    padding: 0.3rem;
+}
+
+.productBottom {
+    display: flex;
+    justify-content: space-between;
+}

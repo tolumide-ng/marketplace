@@ -1,0 +1,10 @@
+.button {
+    background: none;
+    cursor: pointer;
+    background-color: var(--color-light-black);
+}
+
+.button:active:not(:disabled) {
+    transform: scale(0.97);
+    transition: transform 60ms ease-in;
+}
